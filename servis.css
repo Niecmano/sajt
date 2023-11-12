@@ -1,0 +1,118 @@
+*{
+    text-align: center;
+    margin: 0;
+    background-color: rgb(12, 13, 57);
+    color: white;
+}
+
+#zaglavlje {
+    background: linear-gradient(rgb(0, 0, 38),rgb(51, 57, 129));
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+    border-bottom: purple 4px double;
+}
+
+.glink{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(12, 13, 57);
+}
+
+.glink:hover{
+    color: darkorange;
+}
+    .naslov h1{
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+  }
+  @keyframes animacija{
+    0%{
+    color: black;
+    border: none;
+    transform: translate(0);
+    }
+    50%{
+        color: blue;
+        border: 2px solid black;
+        transform: translateX(70px);
+    }
+    100%{
+        color: black;
+        transform: translateX(0);
+    }
+  }
+  .naslov h1{
+    animation-name: animacija;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  h2 {
+    margin-top: 30px; 
+    border:#ffffff;
+    border-radius: 10px;
+}
+.dete2{
+    padding: 30px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    margin: 5vh;
+}
+  .usluge{
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .slike_usluga{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    max-width: 100%;
+  }
+.usluge div{
+    margin: 0px;
+    padding: 10px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-color: steelblues;
+}
+#div1{
+    flex:1;
+}
+#div2{
+    flex:1;
+}
+#div3{
+    flex:1;
+}
+#div4{
+    flex:1;
+}
+#div5{
+    flex:1;
+}
+.ponude button{
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #3498db; 
+    color: #ffffff; 
+    border: 2px solid #2980b9; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.ponude p{
+    margin-top: 10px;
+    padding: 30px;
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+.ponude button:hover{
+    background-color: #2980b9; 
+    border-color: #3498db;
+}

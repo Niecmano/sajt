@@ -1,0 +1,112 @@
+*{
+    text-align: center;
+    margin: 0;
+    background-color: rgb(12, 13, 57);
+    color: white;
+}
+
+#zaglavlje {
+    background: linear-gradient(rgb(0, 0, 38),rgb(51, 57, 129));
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+    border-bottom: purple 4px double;
+}
+
+.glink{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(12, 13, 57);
+}
+
+/* Stil za sekciju sa luksuznim automobilima */
+.luxury-cars-section {
+    padding: 50px;
+    background-color: steelblue;
+    display: block;
+    flex-wrap: wrap;
+  }
+  
+  /* Stil za pojedinačni automobil */
+  .luxury-car {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    background-color: rgb(4, 78, 139);
+    flex-wrap: wrap;
+    height: 20vw;
+  
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  .luxury-car:hover {
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+    background-color: rgb(70, 166, 245);
+    transition: 0.4s;
+  }
+  
+  /* Stil za naslov automobila */
+  .luxury-car h2 {
+    color: #ffffff;
+    font-size: 24px;
+  }
+  
+  /* Stil za cenu automobila */
+  .luxury-car .price {
+    color: #e44d26;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Stil za tehničke karakteristike automobila */
+  .luxury-car .specs {
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Stil za dugme za više informacija ili kupovinu */
+  .luxury-car .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e44d26;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Stil za dugme na hover */
+  .luxury-car .btn:hover {
+    background-color: #333;
+  }
+  
+  /* Dodatni stil za fleksibilno pozicioniranje elemenata unutar luksuznog automobila */
+  .luxury-car {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  /* Stil za informacije (tekst) unutar automobila */
+  .info {
+    display: block;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 30vw; /* Širina informacija - prilagodite prema dizajnu */
+  }
+  
+  /* Stil za slike automobila */
+  .slike {
+    width: auto; /* Da bi slika bila responsivna */
+    height: 17vw; /* Visina slike - prilagodite prema dizajnu */
+    position: relative;
+    right: 0; /* Prilagodite relativni položaj slike */
+    display: flex;
+  }
