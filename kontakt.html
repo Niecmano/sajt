@@ -5,41 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cimaj nas</title>
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="/css/contact.css">
 </head>
 
 <body>
-    <div id="nekIma">
-        <span class="child"><a href="C:\Users\Nemanja\Desktop\projekat\index.html">Pocetna</a></span>
-        <span class="child"><a href="">Ponuda automobila</a></span>
-        <span class="child"><a href="">Auto servis</a></span>
-        <span class="child"><a href="">Kontakt</a></span>
+    <div id="zaglavlje">
+        <a href="index.html" class="glink">Pocetna</a>
+        <a href="ponuda.html" class="glink">Ponuda automobila</a>
+        <a href="servis.html" class="glink">Auto servis</a>
+        <a href="kontakt.html" class="glink">Kontakt</a>
     </div>
+
     <form action="">
-        <label for="">Ime</label>
-        <input type="text" name="" id="">
+        <label for="ime">Ime</label>
+        <input type="text" name="ime" id="ime">
         <br>
-        <label for="">Vaš imejl</label>
-        <input type="text" name="" id="">
+        <label for="email">Vaš imejl</label>
+        <input type="text" name="email" id="email">
         <br>
-        <label for="">Marka Vašeg automobila</label>
-        <select>
+        <label for="automobil">Marka Vašeg automobila</label>
+        <select id="automobil" name="automobil">
             <optgroup label="Sportski automobili">
                 <option value="ferari">Ferrari</option>
                 <option value="lambo">Lamborghini</option>
+            </optgroup>
             <optgroup label="Luksuzni automobili">
                 <option value="rr">Rolls Royce</option>
                 <option value="mm">Mercedes-Maybach</option>
             </optgroup>
-
         </select>
         <br>
-        <label for=""></label>
+        <label for="komentar"></label>
         <br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Unesite komentar po želji"></textarea>
+        <textarea name="komentar" id="komentar" cols="30" rows="10" placeholder="Unesite komentar po želji"></textarea>
         <br>
         <button type="submit">Pošalji komentar</button>
     </form>
+    <footer class="futer">
+        <p>&copy; 2023 Auto Salon EliteDrive. Sva prava zadržana.</p>
+      </footer>
 </body>
 
 </html>
