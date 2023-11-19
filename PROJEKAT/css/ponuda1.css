@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+}
+
+#zaglavlje {
+  background: linear-gradient(rgb(0, 0, 38),rgb(51, 57, 129));
+  display: flex;
+  justify-content: space-around;
+  padding: 2vw;
+  border-bottom: purple 4px double;
+}
+
+.glink{
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.glink:hover{
+  color: darkorange;
+}
+
+
+/*###################################################################################*/
+
+
+.luxury-car{
+   /* Dodano kako bi svi elementi koristili border-box model kutije */
+  /* Dodano kako bi spriječili prelazak sadržaja izvan okvira */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.lux-naslov{
+
+  color: #ebdfdf;
+  font-size: 1.5rem;    /* Povećana veličina fonta */
+  font-family: 'Playfair Display', serif;   
+  text-transform: uppercase;    /* Tekst u velika slova */
+  letter-spacing: 2px;    /* Razmak između slova */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    /* Senka teksta */
+  
+}
+
+/* Stil za sekciju sa luksuznim automobilima */
+.luxury-cars-section {
+  padding: 50px;
+  background-color: steelblue;
+  display: block;
+  flex-wrap: wrap;
+}
+
+.stats {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Stil za pojedinačni automobil */
+.luxury-car {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  background-color: rgb(4, 78, 139);
+  flex-wrap: wrap;
+  height: 20vw;
+
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+/* Stil za naslov automobila */
+.luxury-car h2 {
+  color: #ebdfdf;
+  font-size: 1.3rem;
+}
+
+/* Stil za cenu automobila */
+.luxury-car .price {
+  color: #e44d26;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Stil za tehničke karakteristike automobila */
+.luxury-car .specs {
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Stil za dugme za više informacija ili kupovinu */
+.luxury-car .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e44d26;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  margin-top: 2px;
+
+}
+
+/* Stil za dugme na hover */
+.luxury-car .btn:hover {
+  background-color: #333;
+}
+
+/* Dodatni stil za fleksibilno pozicioniranje elemenata unutar luksuznog automobila */
+.luxury-car {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.luxury-car:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  background-color: rgb(70, 166, 245);
+  transition: 0.4s;
+}
+
+/* Stil za informacije (tekst) unutar automobila */
+.info {
+  display: block;
+  text-align: left;
+
+  box-sizing: border-box;
+  height: auto;
+  width: 30vw;
+  /* Širina informacija - prilagodite prema dizajnu */
+}
+
+/* Stil za slike automobila */
+.slike {
+  width: auto;
+  /* Da bi slika bila responsivna */
+  height: 14vw;
+  /* Visina slike - prilagodite prema dizajnu */
+  position: relative;
+  right: 0;
+  /* Prilagodite relativni položaj slike */
+  display: flex;
+}
+
+@media only screen and (max-width: 710px) {
+
+  /* sakriva slike kad je ekran manji od 720px */
+  .slike {
+    display: none;
+  }
+}
+
+/* /######################################## SPORTSKI AUTOMOBILI  ##################################################/ */
+
+.sport-nas{
+  color: #f7f2b5;
+  font-size: 1.5rem;    /* Povećana veličina fonta */
+  font-family:  serif;   
+  text-transform: uppercase;    /* Tekst u velika slova */
+  letter-spacing: 2px;    /* Razmak između slova */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    /* Senka teksta */
+}
+
+.lajna {
+  border: 4px;
+  /* Sklanjanje uobičajenog okvira linije */
+  height: 10px;
+  /* Debljina linije */
+  background-color: yellow;
+  /* Boja linije */
+  margin: 0;
+  /* Margine iznad i ispod linije  */
+}
+
+.sport-cars-section h2 {
+  color: #ebdfdf;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  width: 100%;
+  /* Dodato stilsko pravilo za širinu naslova */
+}
+
+/* Stil za sekciju sa sportskim automobilima */
+.sport-cars-section {
+  padding: 50px;
+  background-color: darkred;
+  display: block;
+  flex-wrap: wrap;
+  
+}
+
+/* Dodatni stil za animaciju na hover za sportski automobil */
+.sport-cars-section .luxury-car:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  background-color: rgb(80, 11, 11);
+  transition: 0.4s;
+}
+
+.sport-cars-section .luxury-car {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(139, 4, 4);
+}
+
+/* Stil za naslov sportskog automobila */
+.sport-car h2 {
+  color: #ebdfdf;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1350px) {
+
+  /* sakriva podatke kad je ekran manji od 1350px */
+  .leti-napolje {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+
+  /* sakriva slike kad je ekran manji od 720px */
+  .slike-sport {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* sakriva slike kad je ekran manji od 720px */
+  .luxury-car {
+    height: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  /* sakriva slike kad je ekran manji od 720px */
+  .slike-sport {
+    display: none;
+  }
+
+.price{
+  display:none;
+}
+
+  .specs{
+    display: none;
+  }
+  .stats{
+    display: none;
+  }
+
+  .glink{
+    font-size: 14px;
+  }
+
+  .btn{
+    display: none;
+  }
+
+}

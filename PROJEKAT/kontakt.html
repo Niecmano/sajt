@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cimaj nas</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="zaglavljeMobile">
+        <h1 class="mobmenitekst">EliteDrive</h1>
+        <div style="display: flex; flex-direction: row;">
+            <div class="burger-menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h1 class="mobmenitekst">Meni</h1>
+        </div>
+    </div>
+
+    <div id="padajuciMeni">
+        <ul>
+            <li><a href="index.html" class="padajucaStavka">Početna</a></li>
+            <li><a href="ponuda.html" class="padajucaStavka">Ponuda automobila</a></li>
+            <li><a href="servis.html" class="padajucaStavka">Auto servis</a></li>
+            <li><a href="kontakt.html" class="padajucaStavka">Kontakt</a></li>
+        </ul>  
+    </div>
+
+    <div id="zaglavlje">
+        <a href="index.html" class="glink">Pocetna</a>
+        <a href="ponuda.html" class="glink">Ponuda automobila</a>
+        <a href="servis.html" class="glink">Auto servis</a>
+        <a href="kontakt.html" class="glink">Kontakt</a>
+    </div>
+
+    <form action="" onsubmit="return validateForm()">
+        <label for="ime">Ime</label>
+        <input type="text" name="ime" id="ime">
+        <br>
+        <label for="email">Vaš imejl</label>
+        <input type="text" name="email" id="email">
+        <br>
+        <label for="automobil">Marka Vašeg automobila</label>
+        <select id="automobil" name="automobil">
+            <optgroup label="Sportski automobili">
+                <option value="ferari">Ferrari</option>
+                <option value="lambo">Lamborghini</option>
+            </optgroup>
+            <optgroup label="Luksuzni automobili">
+                <option value="rr">Rolls Royce</option>
+                <option value="mm">Mercedes-Maybach</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="komentar"></label>
+        <br>
+        <textarea name="komentar" id="komentar" cols="30" rows="10" placeholder="Unesite komentar po želji"></textarea>
+        <br>
+        <button type="submit">Pošalji komentar</button>
+    </form>
+    <footer class="futer">
+        <p>&copy; 2023 Auto Salon EliteDrive. Sva prava zadržana.</p>
+      </footer>
+      
+      <script src="js/pom.js"></script>
+      <script src="js/validacija.js"></script>
+</body>
+
+</html>
